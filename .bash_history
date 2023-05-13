@@ -93,3 +93,13 @@ git config --global user.email kervinkinkito@gmail.com git config --global user.
 git config --global credential.helper cache
 git config --global user.email kervinkinkito@gmail.com
 git config --global user.name KervinKinkito
+git branch
+git repo
+git --help
+git add .
+git push origin master
+/usr/bin/python /home/kekinkito/nb3/app.py
+git remote -v
+git remote add origin https://github.com/Kervin-Kinkito/Flask-PhishTension.git
+git branch -M main
+git push -u origin main

@@ -3,23 +3,22 @@ import os
 from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 
-import csv
-#data processing
+# data processing
 import numpy as np
 import pandas as pd 
+import csv
 
-#API
-#pip install virustotal-python
+# API
 import requests
 import virustotal_python
 from pprint import pprint
 from base64 import urlsafe_b64encode
 
-#libraries needed for feature extraction
+# libraries needed for feature extraction
 import requests
 import re
 import datetime
-import joblib #for loading the model
+import joblib 
 import socket
 from bs4 import BeautifulSoup
 import whois
@@ -29,8 +28,10 @@ from datetime import datetime, timedelta
 from requests.exceptions import ConnectionError
 from urllib.parse import urlparse, ParseResult
 
+# For the joblib
 import sklearn
 
+# For data storing
 from google.cloud import storage
 
 # pylint: disable=C0103
@@ -101,7 +102,6 @@ def retraining():
 
     #Save the best model using joblib.dump()
     joblib.dump(rf, 'Phishtension_Random_Forest_Classifier.joblib')
-
 
 def feature_extraction(url):
         features = []
