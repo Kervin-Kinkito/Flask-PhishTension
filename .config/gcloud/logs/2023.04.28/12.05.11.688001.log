@@ -1,0 +1,70 @@
+2023-04-28 12:05:11,689 DEBUG    root            Loaded Command Group: ['gcloud', 'run']
+2023-04-28 12:05:11,739 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'deploy']
+2023-04-28 12:05:11,760 DEBUG    root            Running [gcloud.run.deploy] with arguments: [--clear-env-vars: "True", --client-name: "Cloud Code for VS Code", --client-version: "1.21.4", --concurrency: "80", --cpu: "1", --image: "gcr.io/phishtension/nb-3", --memory: "256Mi", --platform: "managed", --port: "8080", --project: "phishtension", --region: "asia-southeast1", --service-account: "632799504819-compute@developer.gserviceaccount.com", --timeout: "300", SERVICE: "nb3"]
+2023-04-28 12:05:11,775 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-04-28 12:05:11,778 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-04-28 12:05:11,781 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-04-28 12:05:11,782 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-04-28 12:05:11,783 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-04-28 12:05:11,786 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-04-28 12:05:11,800 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-04-28 12:05:11,801 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-04-28 12:05:11,804 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-04-28 12:05:11,805 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-04-28 12:05:11,806 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-04-28 12:05:11,809 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-04-28 12:05:11,839 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-04-28 12:05:11,841 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-04-28 12:05:11,845 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-04-28 12:05:11,846 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-04-28 12:05:11,848 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-04-28 12:05:11,851 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-04-28 12:05:11,865 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-04-28 12:05:11,867 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-04-28 12:05:11,870 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-04-28 12:05:11,871 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-04-28 12:05:11,873 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-04-28 12:05:11,876 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-04-28 12:05:11,886 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:12,204 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:12,211 INFO     ___FILE_ONLY___ Deploying container to Cloud Run service [nb3] in project [phishtension] region [asia-southeast1]
+
+2023-04-28 12:05:12,212 INFO     ___FILE_ONLY___ Deploying...
+2023-04-28 12:05:12,220 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:12,837 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "PUT /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:12,846 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:13,172 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:14,183 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:14,522 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:15,532 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:15,869 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:16,879 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:17,234 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:18,243 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:18,548 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:19,559 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:19,854 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:20,864 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:21,192 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:22,204 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:22,548 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:23,558 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:23,860 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:24,871 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:25,210 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:26,220 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:26,524 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:27,535 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:27,882 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:28,892 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:29,239 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:29,250 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:29,591 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:29,658 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-04-28 12:05:29,969 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb3?alt=json HTTP/1.1" 200 None
+2023-04-28 12:05:29,975 INFO     ___FILE_ONLY___ Service [nb3] revision [nb3-00061-veg] has been deployed and is serving 100 percent of traffic.
+Service URL: https://nb3-mgpp2ks77a-as.a.run.app
+
+2023-04-28 12:05:29,976 DEBUG    root            Chosen display Format:none
+2023-04-28 12:05:29,976 INFO     root            Display format: "none"
+2023-04-28 12:05:29,980 DEBUG    root            SDK update checks are disabled.

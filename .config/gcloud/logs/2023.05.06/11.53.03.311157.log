@@ -1,0 +1,14 @@
+2023-05-06 11:53:03,313 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2023-05-06 11:53:03,318 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2023-05-06 11:53:03,324 DEBUG    root            Running [gcloud.auth.list] with arguments: [--filter: "status=ACTIVE", --format: "value(account)", --quiet: "True", --verbosity: "warning"]
+2023-05-06 11:53:03,344 DEBUG    root            Chosen display Format:    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    ) value(account)
+2023-05-06 11:53:03,347 INFO     root            Display format: "    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    ) value(account)"
+2023-05-06 11:53:03,349 INFO     ___FILE_ONLY___ kekinkito@gbox.adnu.edu.ph
+
+2023-05-06 11:53:03,349 DEBUG    root            SDK update checks are disabled.

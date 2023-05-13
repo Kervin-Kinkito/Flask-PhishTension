@@ -1,0 +1,17 @@
+Flask
+requests
+ptvsd
+numpy
+pandas
+requests
+virustotal-python
+DateTime
+joblib
+beautifulsoup4
+python-whois
+urllib3
+flask-cors
+scikit-learn
+seaborn
+firebase_admin
+google-cloud-storage

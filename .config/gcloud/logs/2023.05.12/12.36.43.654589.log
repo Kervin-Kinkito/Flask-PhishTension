@@ -1,0 +1,54 @@
+2023-05-12 12:36:43,658 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-05-12 12:36:43,663 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-05-12 12:36:43,669 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --quiet: "True", --verbosity: "warning"]
+2023-05-12 12:36:43,687 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-05-12 12:36:43,691 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-05-12 12:36:43,696 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-05-12 12:36:43,697 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-05-12 12:36:43,700 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-05-12 12:36:43,705 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-05-12 12:36:43,733 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.gstatic.com:443
+2023-05-12 12:36:43,765 DEBUG    urllib3.connectionpool https://www.gstatic.com:443 "GET /cloudsdk/feature_flag_config_file.yaml HTTP/1.1" 200 101
+2023-05-12 12:36:43,789 DEBUG    root            Chosen display Format:default json
+2023-05-12 12:36:43,790 INFO     root            Display format: "default json"
+2023-05-12 12:36:43,791 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "accessibility": {
+        "screen_reader": "True"
+      },
+      "component_manager": {
+        "disable_update_check": "True"
+      },
+      "compute": {
+        "gce_metadata_read_timeout_sec": "30"
+      },
+      "container": {
+        "use_application_default_credentials": "true"
+      },
+      "core": {
+        "account": "kekinkito@gbox.adnu.edu.ph",
+        "disable_prompts": "True",
+        "disable_usage_reporting": "True",
+        "print_unhandled_tracebacks": "true",
+        "verbosity": "warning"
+      },
+      "metrics": {
+        "environment": "cloudcode.vscode",
+        "environment_version": "1.21.4"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AWY7Ckk4bPkbhVCtZcW6GAFmpXRrvaGnwYb_ThHPWAB6-l5B-L_vQgwubzgDFDzGJDdesHfEWLvzNCyy6mqIzHKI-Ch8xFD508_WvhlHBx7LqSWzNmY-nKL-4r0GnssPjRpGW0ZA3H6LLQdWJ_9cPOoo1tccagheUY0TPcBlD6OppsUnc56qwAVJUyhdNQI95uR7XKlmb1YkwODgygPHL6vOuKg4StyDMwRQ-4AaCgYKATgSARESFQG1tDrpDOwnBJtCmOt2aXXuM9gJLg0238",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc3NzBiMDg1YmY2NDliNzI2YjM1NzQ3NjQwMzBlMWJkZTlhMTBhZTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAyNjEzMTMyMjU4NjcwNDMzNTIxIiwiaGQiOiJnYm94LmFkbnUuZWR1LnBoIiwiZW1haWwiOiJrZWtpbmtpdG9AZ2JveC5hZG51LmVkdS5waCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiWEJJQkQ5S1h6X3B2ZFgwNVI1eFRzdyIsImlhdCI6MTY4Mzg5MzQwNiwiZXhwIjoxNjgzODk3MDA2LCJqdGkiOiI4MjVjYTU2YTU0NTBmYzRlZjE4MjUzOTMwY2NmZmI0ZWM4MWUzODUwIn0.SuQq5WLjxMA0ZWQaYWKse7s6QBUshRuKNAi7Ms43b4H4GPMWDLBexHiw9mvT0FQzv5KIRS1gQcac5hsGDqRFIQfmVPjtWFayVkQYuFVAmlhuw30HWv8DXI6h2zzGWy4JS3dqrgIjGub7JLzuleqnc8Dwq3RIedAqHyCUdl_H1YpxyaK2qU55b91bF0bVcSJ8yIevxRdarDmmVb2BBiWSOOMSGCPvXQBQPiHT5tb8-ReQZqROpmvFK_MvO4yWkToSgMJQev7Hk6X4KK6aYYbdNbbhPoik1Gh1Sqfo4TYJqwIdnMyWSzAUiDAhfoTFiT9htAXhlak_jmdjqVxAvkEWQQ",
+    "token_expiry": "2023-05-12T13:10:04Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/kekinkito/.config/gcloud/config_sentinel"
+  }
+}
+2023-05-12 12:36:43,791 INFO     ___FILE_ONLY___ 
+
+2023-05-12 12:36:43,792 DEBUG    root            SDK update checks are disabled.

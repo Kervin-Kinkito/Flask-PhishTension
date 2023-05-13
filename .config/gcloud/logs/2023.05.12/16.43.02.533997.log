@@ -1,0 +1,52 @@
+2023-05-12 16:43:02,538 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2023-05-12 16:43:02,542 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2023-05-12 16:43:02,547 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json", --quiet: "True", --verbosity: "warning"]
+2023-05-12 16:43:02,577 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-05-12 16:43:02,582 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-05-12 16:43:02,599 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-05-12 16:43:02,600 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-05-12 16:43:02,603 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-05-12 16:43:02,612 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-05-12 16:43:02,696 DEBUG    root            Chosen display Format:default json
+2023-05-12 16:43:02,697 INFO     root            Display format: "default json"
+2023-05-12 16:43:02,699 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "accessibility": {
+        "screen_reader": "True"
+      },
+      "component_manager": {
+        "disable_update_check": "True"
+      },
+      "compute": {
+        "gce_metadata_read_timeout_sec": "30"
+      },
+      "container": {
+        "use_application_default_credentials": "true"
+      },
+      "core": {
+        "account": "kekinkito@gbox.adnu.edu.ph",
+        "disable_prompts": "True",
+        "disable_usage_reporting": "True",
+        "print_unhandled_tracebacks": "true",
+        "verbosity": "warning"
+      },
+      "metrics": {
+        "environment": "cloudcode.vscode",
+        "environment_version": "1.21.4"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AWY7CklQ0Mh9QHssb7u4xyOxmXqk57BW_GHrqoq0aa4czbfuz_Fa9Sr46FlhZAAAadAAdG_MLXM6BygEVKE7qoMJaf7sVt5Bab-5qMgXaWBm0T5nP7thAYip1pQJNB9O_aEPETpARQaLHheLCvK8lOCOqGYsDnwAExm0iGaiZYOcmULvhjhCjddK3TtTA1j85Sen6v0r-P5QeMis4jAYqYts07KlfeIZvosn8ZkaCgYKARASARESFQG1tDrpeEK0h49kvpo9NFzKfepKeQ0238",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijc3NzBiMDg1YmY2NDliNzI2YjM1NzQ3NjQwMzBlMWJkZTlhMTBhZTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAyNjEzMTMyMjU4NjcwNDMzNTIxIiwiaGQiOiJnYm94LmFkbnUuZWR1LnBoIiwiZW1haWwiOiJrZWtpbmtpdG9AZ2JveC5hZG51LmVkdS5waCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiSWVXbVZpTG1BcnNDelk5X1pSME1YQSIsImlhdCI6MTY4MzkwNzU2NSwiZXhwIjoxNjgzOTExMTY1LCJqdGkiOiI1MTI5ZTNmMjQ0NDRjNzdjZDQ3ZGYzMjMxNmI3YzZkNDQzMWJlMDY2In0.sQlb5Por1-MpJR9NuHPdp06RSwVLYi-uMVeP4FE0Is8lgTAAbklY92PAV12iat7Qy026cRqCkzXt7saO4ZN9V6Gm-RkPcMFDbcQaqiTNWsvW_D-sm5rZ7VWckfFHp6HnjD68nQ_n_8mleGvojLt16ZYdJRHinrjZj3iNRtkfVd6MjQdFwkm7QZoxwADgJ9YRylLrk1a13daXgxspgTCYfm8uUfETdSoJjw3ojZPiJKWAgV0WrSArGyi9j2LQO4KTFjD5yxJGtrzYd8aTpg5_gaI1SJP45oD5HUzIoevlh0hrXYuHOMORIVKH1TXLeA3DiB4uuOQv8FYXS-jTqtbZWg",
+    "token_expiry": "2023-05-12T17:06:03Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/kekinkito/.config/gcloud/config_sentinel"
+  }
+}
+2023-05-12 16:43:02,699 INFO     ___FILE_ONLY___ 
+
+2023-05-12 16:43:02,700 DEBUG    root            SDK update checks are disabled.

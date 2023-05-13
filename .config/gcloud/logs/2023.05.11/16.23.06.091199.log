@@ -1,0 +1,6 @@
+2023-05-11 16:23:06,099 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'code']
+2023-05-11 16:23:06,183 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'code', 'export']
+2023-05-11 16:23:06,197 DEBUG    root            Running [gcloud.alpha.code.export] with arguments: [--dockerfile: "", --env-vars: "OrderedDict([('K_SERVICE', 'nb3'), ('K_REVISION', 'local'), ('K_CONFIGURATION', 'nb3')])", --image: "nb3", --kubernetes-file: "/tmp/cloud-code-cloud-run-mpxucY/pods_and_services.yaml", --memory: "268435456", --no-skaffold-file: "True", --quiet: "True", --readiness-probe: "True", --service-name: "nb3", --verbosity: "warning"]
+2023-05-11 16:23:06,259 DEBUG    root            Chosen display Format:default
+2023-05-11 16:23:06,261 INFO     root            Display format: "default"
+2023-05-11 16:23:06,262 DEBUG    root            SDK update checks are disabled.

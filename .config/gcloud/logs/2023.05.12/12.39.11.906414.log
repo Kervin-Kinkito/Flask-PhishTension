@@ -1,0 +1,143 @@
+2023-05-12 12:39:11,907 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'run']
+2023-05-12 12:39:11,931 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'run', 'services']
+2023-05-12 12:39:11,973 DEBUG    root            Loaded Command Group: ['gcloud', 'beta', 'run', 'services', 'describe']
+2023-05-12 12:39:11,982 DEBUG    root            Running [gcloud.beta.run.services.describe] with arguments: [--format: "json", --platform: "managed", --project: "phishtension", --quiet: "True", --region: "asia-southeast1", --verbosity: "warning", SERVICE: "nb-3"]
+2023-05-12 12:39:11,996 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-05-12 12:39:11,999 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-05-12 12:39:12,002 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-05-12 12:39:12,003 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-05-12 12:39:12,005 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-05-12 12:39:12,007 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-05-12 12:39:12,021 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-05-12 12:39:12,023 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-05-12 12:39:12,026 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-05-12 12:39:12,026 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-05-12 12:39:12,028 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-05-12 12:39:12,031 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-05-12 12:39:12,064 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-05-12 12:39:12,066 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-05-12 12:39:12,069 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-05-12 12:39:12,070 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-05-12 12:39:12,071 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-05-12 12:39:12,074 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-05-12 12:39:12,085 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-05-12 12:39:12,087 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-05-12 12:39:12,090 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-05-12 12:39:12,091 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-05-12 12:39:12,092 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-05-12 12:39:12,095 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-05-12 12:39:12,105 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): asia-southeast1-run.googleapis.com:443
+2023-05-12 12:39:12,419 DEBUG    urllib3.connectionpool https://asia-southeast1-run.googleapis.com:443 "GET /apis/serving.knative.dev/v1/namespaces/phishtension/services/nb-3?alt=json HTTP/1.1" 200 None
+2023-05-12 12:39:12,426 DEBUG    root            Chosen display Format:service json
+2023-05-12 12:39:12,427 INFO     root            Display format: "service json"
+2023-05-12 12:39:12,431 INFO     ___FILE_ONLY___ {
+  "apiVersion": "serving.knative.dev/v1",
+  "kind": "Service",
+  "metadata": {
+    "annotations": {
+      "client.knative.dev/user-image": "gcr.io/phishtension/nb-3",
+      "run.googleapis.com/client-name": "Cloud Code for VS Code",
+      "run.googleapis.com/client-version": "1.21.4",
+      "run.googleapis.com/ingress": "all",
+      "run.googleapis.com/ingress-status": "all",
+      "run.googleapis.com/operation-id": "7feea397-95e6-4b4c-a92d-e0e1dcc63934",
+      "serving.knative.dev/creator": "kekinkito@gbox.adnu.edu.ph",
+      "serving.knative.dev/lastModifier": "kekinkito@gbox.adnu.edu.ph"
+    },
+    "creationTimestamp": "2023-05-07T13:33:19.389542Z",
+    "generation": 30,
+    "labels": {
+      "cloud.googleapis.com/location": "asia-southeast1"
+    },
+    "name": "nb-3",
+    "namespace": "632799504819",
+    "resourceVersion": "AAX7fmQ6C18",
+    "selfLink": "/apis/serving.knative.dev/v1/namespaces/632799504819/services/nb-3",
+    "uid": "1f60be99-1fa2-4275-8b05-35d8cf5ce509"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "50",
+          "client.knative.dev/user-image": "gcr.io/phishtension/nb-3",
+          "run.googleapis.com/client-name": "Cloud Code for VS Code",
+          "run.googleapis.com/client-version": "1.21.4"
+        },
+        "name": "nb-3-00030-yuj"
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "image": "gcr.io/phishtension/nb-3",
+            "ports": [
+              {
+                "containerPort": 8080,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "2",
+                "memory": "800Mi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8080
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "632799504819-compute@developer.gserviceaccount.com",
+        "timeoutSeconds": 300
+      }
+    },
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100
+      }
+    ]
+  },
+  "status": {
+    "address": {
+      "url": "https://nb-3-mgpp2ks77a-as.a.run.app"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2023-05-12T12:39:09.422110Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2023-05-12T12:39:03.248248Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2023-05-12T12:39:09.529951Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "nb-3-00030-yuj",
+    "latestReadyRevisionName": "nb-3-00030-yuj",
+    "observedGeneration": 30,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "nb-3-00030-yuj"
+      }
+    ],
+    "url": "https://nb-3-mgpp2ks77a-as.a.run.app"
+  }
+}
+2023-05-12 12:39:12,431 INFO     ___FILE_ONLY___ 
+
+2023-05-12 12:39:12,432 DEBUG    root            SDK update checks are disabled.

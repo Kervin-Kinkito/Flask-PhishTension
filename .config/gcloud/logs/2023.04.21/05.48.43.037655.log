@@ -1,0 +1,24 @@
+2023-04-21 05:48:43,038 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2023-04-21 05:48:43,042 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'docker_helper']
+2023-04-21 05:48:43,044 DEBUG    root            Running [gcloud.auth.docker-helper] with arguments: [METHOD: "get"]
+2023-04-21 05:48:43,056 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-04-21 05:48:43,059 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-04-21 05:48:43,062 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-04-21 05:48:43,063 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-04-21 05:48:43,064 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-04-21 05:48:43,067 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-04-21 05:48:43,075 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-04-21 05:48:43,077 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-04-21 05:48:43,079 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-04-21 05:48:43,080 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token?scopes=%0Aemail%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform%0A
+2023-04-21 05:48:43,082 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-04-21 05:48:43,085 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token?scopes=%0Aemail%0Ahttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform%0A HTTP/1.1" 200 None
+2023-04-21 05:48:43,091 DEBUG    root            Chosen display Format:json
+2023-04-21 05:48:43,091 INFO     root            Display format: "json"
+2023-04-21 05:48:43,092 INFO     ___FILE_ONLY___ {
+  "Secret": "ya29.a0Ael9sCPl2UWgMKXYWrHKgYIzrIPkQLF_j8HD2Aer1puzsDiC0oXdKp5OjKZUfTAtz_BbfXao2aJS60P4QI56ACry27s4w296dNGTSCHVvz962nxpjRdQJ4QgdQ8il4qCIaSLhLOtvEgS99hj_g4IBhNPEm7PwK5TLqT9husN8c55sZb9CQcLYUUfbJUfJZINk1Q_qIN4MfiYfFd2bULHr44XcDNjB-gUK5_FF8a4aCgYKAU0SARESFQF4udJhRoaZ2qtKmvQlUYR-p7B0UA0239",
+  "Username": "_dcgcloud_token"
+}
+2023-04-21 05:48:43,092 INFO     ___FILE_ONLY___ 
+
+2023-04-21 05:48:43,092 DEBUG    root            SDK update checks are disabled.

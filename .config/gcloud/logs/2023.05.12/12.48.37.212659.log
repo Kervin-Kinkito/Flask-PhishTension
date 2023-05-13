@@ -1,0 +1,889 @@
+2023-05-12 12:48:37,213 DEBUG    root            Loaded Command Group: ['gcloud', 'run']
+2023-05-12 12:48:37,238 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'services']
+2023-05-12 12:48:37,279 DEBUG    root            Loaded Command Group: ['gcloud', 'run', 'services', 'list']
+2023-05-12 12:48:37,287 DEBUG    root            Running [gcloud.run.services.list] with arguments: [--filter: "NOT metadata.labels.goog-managed-by:"cloudfunctions"", --format: "json", --platform: "managed", --project: "phishtension", --quiet: "True", --verbosity: "warning"]
+2023-05-12 12:48:37,299 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-05-12 12:48:37,301 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-05-12 12:48:37,304 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-05-12 12:48:37,305 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-05-12 12:48:37,306 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-05-12 12:48:37,309 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-05-12 12:48:37,324 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true
+2023-05-12 12:48:37,326 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2023-05-12 12:48:37,330 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/?recursive=true HTTP/1.1" 200 None
+2023-05-12 12:48:37,331 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token
+2023-05-12 12:48:37,333 DEBUG    urllib3.connectionpool Resetting dropped connection: metadata.google.internal
+2023-05-12 12:48:37,337 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/kekinkito@gbox.adnu.edu.ph/token HTTP/1.1" 200 None
+2023-05-12 12:48:37,367 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): run.googleapis.com:443
+2023-05-12 12:48:37,909 DEBUG    urllib3.connectionpool https://run.googleapis.com:443 "GET /v1/projects/phishtension/locations/-/services?alt=json HTTP/1.1" 200 None
+2023-05-12 12:48:37,926 DEBUG    root            Chosen display Format:table(ready_symbol.color(red="[xX]",green="[✓✔]",yellow="[-!…]"):label="",firstof(id,metadata.name):label=SERVICE,region:label=REGION,domain:label=URL,last_modifier:label="LAST DEPLOYED BY",last_transition_time:label="LAST DEPLOYED AT"):(metadata.labels.'run.googleapis.com/satisfiesPzs':alias='satisfiesPzs') json
+2023-05-12 12:48:37,929 INFO     root            Display format: "table(ready_symbol.color(red="[xX]",green="[✓✔]",yellow="[-!…]"):label="",firstof(id,metadata.name):label=SERVICE,region:label=REGION,domain:label=URL,last_modifier:label="LAST DEPLOYED BY",last_transition_time:label="LAST DEPLOYED AT"):(metadata.labels.'run.googleapis.com/satisfiesPzs':alias='satisfiesPzs') json"
+2023-05-12 12:48:37,941 INFO     ___FILE_ONLY___ [
+  {
+2023-05-12 12:48:37,941 INFO     ___FILE_ONLY___ 
+    "apiVersion": "serving.knative.dev/v1",
+2023-05-12 12:48:37,941 INFO     ___FILE_ONLY___ 
+    "kind": "Service",
+2023-05-12 12:48:37,941 INFO     ___FILE_ONLY___ 
+    "metadata": {
+2023-05-12 12:48:37,941 INFO     ___FILE_ONLY___ 
+      "annotations": {
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+        "client.knative.dev/user-image": "gcr.io/phishtension/nb-3",
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-version": "1.21.4",
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/ingress": "all",
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/ingress-status": "all",
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/operation-id": "9971e02c-fb2e-483e-9c34-0d36d6095762",
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/creator": "kekinkito@gbox.adnu.edu.ph",
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/lastModifier": "kekinkito@gbox.adnu.edu.ph"
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+      "creationTimestamp": "2023-05-07T13:33:19.389542Z",
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+      "generation": 31,
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+      "labels": {
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+        "cloud.googleapis.com/location": "asia-southeast1"
+2023-05-12 12:48:37,942 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+      "name": "nb-3",
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+      "namespace": "632799504819",
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+      "resourceVersion": "AAX7fnUv5+g",
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/632799504819/services/nb-3",
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+      "uid": "1f60be99-1fa2-4275-8b05-35d8cf5ce509"
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+    },
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+    "spec": {
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+      "template": {
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+        "metadata": {
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+          "annotations": {
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+            "autoscaling.knative.dev/maxScale": "50",
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+            "client.knative.dev/user-image": "gcr.io/phishtension/nb-3",
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+            "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+            "run.googleapis.com/client-version": "1.21.4"
+2023-05-12 12:48:37,943 INFO     ___FILE_ONLY___ 
+          },
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+          "name": "nb-3-00031-vol"
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+        "spec": {
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+          "containerConcurrency": 80,
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+          "containers": [
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+            {
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+              "image": "gcr.io/phishtension/nb-3",
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+              "ports": [
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+                {
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+                  "containerPort": 8080,
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+                  "name": "http1"
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+                }
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+              ],
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+              "resources": {
+2023-05-12 12:48:37,944 INFO     ___FILE_ONLY___ 
+                "limits": {
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+                  "cpu": "2",
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+                  "memory": "800Mi"
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+                }
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+              },
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+              "startupProbe": {
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+                "failureThreshold": 1,
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+                "periodSeconds": 240,
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+                "tcpSocket": {
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+                  "port": 8080
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+                },
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+                "timeoutSeconds": 240
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+              }
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+            }
+2023-05-12 12:48:37,945 INFO     ___FILE_ONLY___ 
+          ],
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+          "serviceAccountName": "632799504819-compute@developer.gserviceaccount.com",
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+          "timeoutSeconds": 300
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+      "traffic": [
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+          "latestRevision": true,
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+          "percent": 100
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+      ]
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+    },
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+    "status": {
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+      "address": {
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+        "url": "https://nb-3-mgpp2ks77a-as.a.run.app"
+2023-05-12 12:48:37,946 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+      "conditions": [
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-05-12T12:43:53.976249Z",
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+          "type": "Ready"
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-05-12T12:43:51.403068Z",
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+          "type": "ConfigurationsReady"
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-05-12T12:43:54.078184Z",
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:37,947 INFO     ___FILE_ONLY___ 
+          "type": "RoutesReady"
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+      ],
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+      "latestCreatedRevisionName": "nb-3-00031-vol",
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+      "latestReadyRevisionName": "nb-3-00031-vol",
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+      "observedGeneration": 31,
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+      "traffic": [
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+          "latestRevision": true,
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+          "percent": 100,
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+          "revisionName": "nb-3-00031-vol"
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+      ],
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+      "url": "https://nb-3-mgpp2ks77a-as.a.run.app"
+2023-05-12 12:48:37,948 INFO     ___FILE_ONLY___ 
+    }
+2023-05-12 12:48:37,949 INFO     ___FILE_ONLY___ 
+  }
+2023-05-12 12:48:37,960 INFO     ___FILE_ONLY___ ,
+  {
+2023-05-12 12:48:37,960 INFO     ___FILE_ONLY___ 
+    "apiVersion": "serving.knative.dev/v1",
+2023-05-12 12:48:37,960 INFO     ___FILE_ONLY___ 
+    "kind": "Service",
+2023-05-12 12:48:37,960 INFO     ___FILE_ONLY___ 
+    "metadata": {
+2023-05-12 12:48:37,960 INFO     ___FILE_ONLY___ 
+      "annotations": {
+2023-05-12 12:48:37,960 INFO     ___FILE_ONLY___ 
+        "client.knative.dev/user-image": "gcr.io/phishtension/nb-3-django",
+2023-05-12 12:48:37,960 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-version": "1.21.2",
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/ingress": "all",
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/ingress-status": "all",
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/operation-id": "9704f5c9-32ba-489d-905c-b2ac5e27379a",
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/creator": "kekinkito@gbox.adnu.edu.ph",
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/lastModifier": "kekinkito@gbox.adnu.edu.ph"
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+      "creationTimestamp": "2023-04-04T11:44:22.003890Z",
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+      "generation": 2,
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+      "labels": {
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+        "cloud.googleapis.com/location": "asia-southeast1"
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+      "name": "nb-3-django-sg",
+2023-05-12 12:48:37,961 INFO     ___FILE_ONLY___ 
+      "namespace": "632799504819",
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+      "resourceVersion": "AAX4gUWMU9w",
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/632799504819/services/nb-3-django-sg",
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+      "uid": "7044d793-6291-44b5-994c-960f39ff7fe2"
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+    },
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+    "spec": {
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+      "template": {
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+        "metadata": {
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+          "annotations": {
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+            "autoscaling.knative.dev/maxScale": "100",
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+            "client.knative.dev/user-image": "gcr.io/phishtension/nb-3-django",
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+            "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2023-05-12 12:48:37,962 INFO     ___FILE_ONLY___ 
+            "run.googleapis.com/client-version": "1.21.2"
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+          },
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+          "name": "nb-3-django-sg-00002-cay"
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+        "spec": {
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+          "containerConcurrency": 80,
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+          "containers": [
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+            {
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+              "image": "gcr.io/phishtension/nb-3-django",
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+              "ports": [
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+                {
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+                  "containerPort": 8080,
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+                  "name": "http1"
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+                }
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+              ],
+2023-05-12 12:48:37,963 INFO     ___FILE_ONLY___ 
+              "resources": {
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+                "limits": {
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+                  "cpu": "1",
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+                  "memory": "256Mi"
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+                }
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+              },
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+              "startupProbe": {
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+                "failureThreshold": 1,
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+                "periodSeconds": 240,
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+                "tcpSocket": {
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+                  "port": 8080
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+                },
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+                "timeoutSeconds": 240
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+              }
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+            }
+2023-05-12 12:48:37,964 INFO     ___FILE_ONLY___ 
+          ],
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+          "serviceAccountName": "632799504819-compute@developer.gserviceaccount.com",
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+          "timeoutSeconds": 300
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+      "traffic": [
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+          "latestRevision": true,
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+          "percent": 100
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+      ]
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+    },
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+    "status": {
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+      "address": {
+2023-05-12 12:48:37,965 INFO     ___FILE_ONLY___ 
+        "url": "https://nb-3-django-sg-mgpp2ks77a-as.a.run.app"
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+      "conditions": [
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-04-04T11:49:44.750471Z",
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+          "type": "Ready"
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-04-04T11:49:40.201137Z",
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+          "type": "ConfigurationsReady"
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-04-04T11:49:44.847324Z",
+2023-05-12 12:48:37,966 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+          "type": "RoutesReady"
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+      ],
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+      "latestCreatedRevisionName": "nb-3-django-sg-00002-cay",
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+      "latestReadyRevisionName": "nb-3-django-sg-00002-cay",
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+      "observedGeneration": 2,
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+      "traffic": [
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+          "latestRevision": true,
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+          "percent": 100,
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+          "revisionName": "nb-3-django-sg-00002-cay"
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+      ],
+2023-05-12 12:48:37,967 INFO     ___FILE_ONLY___ 
+      "url": "https://nb-3-django-sg-mgpp2ks77a-as.a.run.app"
+2023-05-12 12:48:37,968 INFO     ___FILE_ONLY___ 
+    }
+2023-05-12 12:48:37,968 INFO     ___FILE_ONLY___ 
+  }
+2023-05-12 12:48:37,979 INFO     ___FILE_ONLY___ ,
+  {
+2023-05-12 12:48:37,979 INFO     ___FILE_ONLY___ 
+    "apiVersion": "serving.knative.dev/v1",
+2023-05-12 12:48:37,979 INFO     ___FILE_ONLY___ 
+    "kind": "Service",
+2023-05-12 12:48:37,979 INFO     ___FILE_ONLY___ 
+    "metadata": {
+2023-05-12 12:48:37,979 INFO     ___FILE_ONLY___ 
+      "annotations": {
+2023-05-12 12:48:37,979 INFO     ___FILE_ONLY___ 
+        "client.knative.dev/user-image": "gcr.io/phishtension/nb-3",
+2023-05-12 12:48:37,979 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2023-05-12 12:48:37,979 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-version": "1.21.4",
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/ingress": "all",
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/ingress-status": "all",
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/operation-id": "4c1b8eab-469d-402d-b000-62123b9cdf1d",
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/creator": "kekinkito@gbox.adnu.edu.ph",
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/lastModifier": "kekinkito@gbox.adnu.edu.ph"
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+      "creationTimestamp": "2023-05-07T13:26:58.752989Z",
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+      "generation": 1,
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+      "labels": {
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+        "cloud.googleapis.com/location": "us-central1"
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+      "name": "nb-3-us",
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+      "namespace": "632799504819",
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+      "resourceVersion": "AAX7Gnu+hgU",
+2023-05-12 12:48:37,980 INFO     ___FILE_ONLY___ 
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/632799504819/services/nb-3-us",
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+      "uid": "556bd4b5-5325-4217-8d21-ce65a354fa31"
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+    },
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+    "spec": {
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+      "template": {
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+        "metadata": {
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+          "annotations": {
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+            "autoscaling.knative.dev/maxScale": "50",
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+            "client.knative.dev/user-image": "gcr.io/phishtension/nb-3",
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+            "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+            "run.googleapis.com/client-version": "1.21.4"
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+          },
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+          "name": "nb-3-us-00001-yez"
+2023-05-12 12:48:37,981 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:37,982 INFO     ___FILE_ONLY___ 
+        "spec": {
+2023-05-12 12:48:37,982 INFO     ___FILE_ONLY___ 
+          "containerConcurrency": 80,
+2023-05-12 12:48:37,982 INFO     ___FILE_ONLY___ 
+          "containers": [
+2023-05-12 12:48:37,982 INFO     ___FILE_ONLY___ 
+            {
+2023-05-12 12:48:37,982 INFO     ___FILE_ONLY___ 
+              "image": "gcr.io/phishtension/nb-3",
+2023-05-12 12:48:37,982 INFO     ___FILE_ONLY___ 
+              "ports": [
+2023-05-12 12:48:37,982 INFO     ___FILE_ONLY___ 
+                {
+2023-05-12 12:48:37,982 INFO     ___FILE_ONLY___ 
+                  "containerPort": 8080,
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+                  "name": "http1"
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+                }
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+              ],
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+              "resources": {
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+                "limits": {
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+                  "cpu": "2",
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+                  "memory": "256Mi"
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+                }
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+              },
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+              "startupProbe": {
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+                "failureThreshold": 1,
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+                "periodSeconds": 240,
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+                "tcpSocket": {
+2023-05-12 12:48:37,983 INFO     ___FILE_ONLY___ 
+                  "port": 8080
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+                },
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+                "timeoutSeconds": 240
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+              }
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+            }
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+          ],
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+          "serviceAccountName": "632799504819-compute@developer.gserviceaccount.com",
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+          "timeoutSeconds": 300
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+      "traffic": [
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+          "latestRevision": true,
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+          "percent": 100
+2023-05-12 12:48:37,984 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+      ]
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+    },
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+    "status": {
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+      "address": {
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+        "url": "https://nb-3-us-mgpp2ks77a-uc.a.run.app"
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+      "conditions": [
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-05-07T13:27:27.358469Z",
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+          "type": "Ready"
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,985 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-05-07T13:27:27.021610Z",
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+          "type": "ConfigurationsReady"
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-05-07T13:27:27.358469Z",
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+          "type": "RoutesReady"
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+      ],
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+      "latestCreatedRevisionName": "nb-3-us-00001-yez",
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+      "latestReadyRevisionName": "nb-3-us-00001-yez",
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+      "observedGeneration": 1,
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+      "traffic": [
+2023-05-12 12:48:37,986 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:37,987 INFO     ___FILE_ONLY___ 
+          "latestRevision": true,
+2023-05-12 12:48:37,987 INFO     ___FILE_ONLY___ 
+          "percent": 100,
+2023-05-12 12:48:37,987 INFO     ___FILE_ONLY___ 
+          "revisionName": "nb-3-us-00001-yez"
+2023-05-12 12:48:37,987 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:37,987 INFO     ___FILE_ONLY___ 
+      ],
+2023-05-12 12:48:37,987 INFO     ___FILE_ONLY___ 
+      "url": "https://nb-3-us-mgpp2ks77a-uc.a.run.app"
+2023-05-12 12:48:37,987 INFO     ___FILE_ONLY___ 
+    }
+2023-05-12 12:48:37,987 INFO     ___FILE_ONLY___ 
+  }
+2023-05-12 12:48:37,999 INFO     ___FILE_ONLY___ ,
+  {
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+    "apiVersion": "serving.knative.dev/v1",
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+    "kind": "Service",
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+    "metadata": {
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+      "annotations": {
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+        "client.knative.dev/user-image": "gcr.io/phishtension/nb-3",
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/client-version": "1.21.4",
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/ingress": "all",
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/ingress-status": "all",
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+        "run.googleapis.com/operation-id": "f9c9c703-65fc-4008-8b71-7a361911aa15",
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/creator": "kekinkito@gbox.adnu.edu.ph",
+2023-05-12 12:48:38,000 INFO     ___FILE_ONLY___ 
+        "serving.knative.dev/lastModifier": "kekinkito@gbox.adnu.edu.ph"
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      "creationTimestamp": "2023-03-29T07:16:22.299045Z",
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      "generation": 86,
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      "labels": {
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+        "cloud.googleapis.com/location": "asia-southeast1"
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      "name": "nb3",
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      "namespace": "632799504819",
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      "resourceVersion": "AAX7F2P2fMU",
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      "selfLink": "/apis/serving.knative.dev/v1/namespaces/632799504819/services/nb3",
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      "uid": "6f8b44af-8f0a-43fc-a7a7-f7196e96d8e2"
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+    },
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+    "spec": {
+2023-05-12 12:48:38,001 INFO     ___FILE_ONLY___ 
+      "template": {
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+        "metadata": {
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+          "annotations": {
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+            "autoscaling.knative.dev/maxScale": "100",
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+            "client.knative.dev/user-image": "gcr.io/phishtension/nb-3",
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+            "run.googleapis.com/client-name": "Cloud Code for VS Code",
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+            "run.googleapis.com/client-version": "1.21.4"
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+          },
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+          "name": "nb3-00086-gab"
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+        "spec": {
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+          "containerConcurrency": 80,
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+          "containers": [
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+            {
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+              "image": "gcr.io/phishtension/nb-3",
+2023-05-12 12:48:38,002 INFO     ___FILE_ONLY___ 
+              "ports": [
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+                {
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+                  "containerPort": 8080,
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+                  "name": "http1"
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+                }
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+              ],
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+              "resources": {
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+                "limits": {
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+                  "cpu": "1",
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+                  "memory": "256Mi"
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+                }
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+              },
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+              "startupProbe": {
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+                "failureThreshold": 1,
+2023-05-12 12:48:38,003 INFO     ___FILE_ONLY___ 
+                "periodSeconds": 240,
+2023-05-12 12:48:38,004 INFO     ___FILE_ONLY___ 
+                "tcpSocket": {
+2023-05-12 12:48:38,004 INFO     ___FILE_ONLY___ 
+                  "port": 8080
+2023-05-12 12:48:38,004 INFO     ___FILE_ONLY___ 
+                },
+2023-05-12 12:48:38,004 INFO     ___FILE_ONLY___ 
+                "timeoutSeconds": 240
+2023-05-12 12:48:38,004 INFO     ___FILE_ONLY___ 
+              }
+2023-05-12 12:48:38,004 INFO     ___FILE_ONLY___ 
+            }
+2023-05-12 12:48:38,004 INFO     ___FILE_ONLY___ 
+          ],
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+          "serviceAccountName": "632799504819-compute@developer.gserviceaccount.com",
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+          "timeoutSeconds": 300
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+      "traffic": [
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+          "latestRevision": true,
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+          "percent": 100
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+      ]
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+    },
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+    "status": {
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+      "address": {
+2023-05-12 12:48:38,005 INFO     ___FILE_ONLY___ 
+        "url": "https://nb3-mgpp2ks77a-as.a.run.app"
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+      },
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+      "conditions": [
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-05-07T09:46:03.351802Z",
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+          "type": "Ready"
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-05-07T09:45:57.049918Z",
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+          "type": "ConfigurationsReady"
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+        },
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+          "lastTransitionTime": "2023-05-07T09:46:03.471045Z",
+2023-05-12 12:48:38,006 INFO     ___FILE_ONLY___ 
+          "status": "True",
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+          "type": "RoutesReady"
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+      ],
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+      "latestCreatedRevisionName": "nb3-00086-gab",
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+      "latestReadyRevisionName": "nb3-00086-gab",
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+      "observedGeneration": 86,
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+      "traffic": [
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+        {
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+          "latestRevision": true,
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+          "percent": 100,
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+          "revisionName": "nb3-00086-gab"
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+        }
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+      ],
+2023-05-12 12:48:38,007 INFO     ___FILE_ONLY___ 
+      "url": "https://nb3-mgpp2ks77a-as.a.run.app"
+2023-05-12 12:48:38,008 INFO     ___FILE_ONLY___ 
+    }
+2023-05-12 12:48:38,008 INFO     ___FILE_ONLY___ 
+  }
+2023-05-12 12:48:38,008 WARNING  root            The following filter keys were not present in any resource : metadata.labels.goog-managed-by
+2023-05-12 12:48:38,008 INFO     ___FILE_ONLY___ 
+]
+
+2023-05-12 12:48:38,009 DEBUG    root            SDK update checks are disabled.

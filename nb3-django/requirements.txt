@@ -1,0 +1,4 @@
+django==4.2
+requests==2.28.1
+ptvsd==4.3.2 # Required for debugging.
+numpy==1.24.2
