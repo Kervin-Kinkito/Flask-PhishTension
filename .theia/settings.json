@@ -1,4 +1,5 @@
 {
     "redhat.telemetry.enabled": false,
-    "csharp.suppressDotnetRestoreNotification": false
+    "csharp.suppressDotnetRestoreNotification": false,
+    "workbench.colorTheme": "Visual Studio 2019 Dark"
 }

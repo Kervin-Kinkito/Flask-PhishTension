@@ -87,3 +87,9 @@ chmod o+w RetrainDatabase.csv
 pwd
 ls
 ls -l RetrainDatabase.csv
+Run git config --global user.email kervinkinkito@gmail.com git config --global user.name Kervin Kinkito
+Run git config --global user.email kervinkinkito@gmail.com git config --global user.name Kervin Kinkit
+git config --global user.email kervinkinkito@gmail.com git config --global user.name Kervin Kinkito
+git config --global credential.helper cache
+git config --global user.email kervinkinkito@gmail.com
+git config --global user.name KervinKinkito
